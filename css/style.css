@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+/* Reset padding and margin to zero */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Set background */
+.background{
+    background: url("../img/bg.jpg") no-repeat center;
+    display: flex;
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100wh;
+    justify-content: center;
+    align-items: center;
+    background-size: 100vw 100vh;
+    
+
+}
+
+#board{
+    border:2px solid black;
+    /* vmin - min of vh and vw */
+    width: 90vmin;
+    height: 92vmin;
+    background:linear-gradient(rgb(188, 252, 188),rgb(240, 240, 239));
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.food{
+    background: linear-gradient(orange,yellow);
+    border-radius: 10px;
+    border: 1px solid black;
+    
+}
+
+.head{
+    background: linear-gradient(red,purple);
+    border-radius: 10px;
+    border: 1px solid black;
+    transform: scale(1.2);
+}
+
+.snakebody{
+    background: linear-gradient(purple,yellow);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#scoreCard{
+    position: absolute;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 30px;
+    top: 10px;
+    right: 100px;
+
+}
